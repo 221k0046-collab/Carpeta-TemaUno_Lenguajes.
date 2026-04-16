@@ -18,6 +18,8 @@ app.get("/", async (req, res) => {
       quote: quote,
       character: character,
     });
+        console.log(result.data);
+
 
   } catch (error) {
     console.log(error.message);
