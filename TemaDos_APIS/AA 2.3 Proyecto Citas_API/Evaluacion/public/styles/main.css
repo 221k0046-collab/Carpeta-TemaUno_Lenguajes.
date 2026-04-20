@@ -1,0 +1,77 @@
+:root {
+  --card-height: 75vh; 
+  --card-width: calc(var(--card-height) / .6);
+}
+
+body {
+  min-height: 100vh;
+  background: #212534;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2rem;
+  box-sizing: border-box;
+}
+
+/* Título */
+h1 {
+  color: white;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 20px;
+}
+
+/* Tarjeta */
+.card {
+  background: url("/images/ambiente.jpg");
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Imagen */
+.card img {
+  width: 180px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+/* Texto */
+.card p {
+  font-size: 1.1em;
+  color: #333;
+  font-family: "Lato", sans-serif;
+  overflow-y: auto;
+}
+
+/* Nombre personaje */
+.character {
+  color: white;
+  font-size: 24px;
+  margin-top: 15px;
+  font-family: "Lato", sans-serif;
+}
+
+/* Botón */
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #4ca1fb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #3c67e3;
+  transform: scale(1.05);
+}
