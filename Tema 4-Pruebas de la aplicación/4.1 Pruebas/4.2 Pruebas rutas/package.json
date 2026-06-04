@@ -1,0 +1,26 @@
+{
+  "name": "4.2 pruebas unitarias",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Francisco Eduardo Reyes Caamal",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --forceExit"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongodb": "^7.2.0",
+    "mongoose": "^9.6.1"
+  },
+  "devDependencies": {
+    "jest": "^30.4.2",
+    "supertest": "^7.2.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {}
+  }
+}
